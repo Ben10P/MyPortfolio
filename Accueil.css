@@ -322,11 +322,17 @@ span {
     margin: 2rem 0 3rem;
 }
 
+.video{
+    margin-top: -150px;
+}
 .video .video-container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 4rem;
+}
+video {
+    aspect-ratio: 1/1;
 }
 
 .services {
@@ -336,6 +342,7 @@ span {
 
 .services h2 {
     margin-bottom: 5rem;
+    margin-top: -150px;
 }
 .services .services-container {
     display: flex;
@@ -386,6 +393,7 @@ span {
 
 .portfolio {
     padding-bottom: 10rem;
+    margin-top: -150px;
 }
 .portfolio h2 {
     margin-bottom: 4rem;
