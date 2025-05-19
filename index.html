@@ -32,6 +32,7 @@
                 <h3>Salut! Je suis</h3>
                 <h1>Benoit OGOUTOLOU</h1>
                 <p>Web developer | Web Disign | Art of Baking.</p>
+                <p>Co-founder & COO <a href="https://asili-care.com/">ASILI-CARE</a></p>
 
                 <div class="social-media">
                     <a href="https://www.linkedin.com/in/benoit-ogoutolou-46557a185"><i class="bx bxl-linkedin"></i></a>
@@ -39,7 +40,7 @@
                     <a href="https://www.instagram.com/selsucre10/"><i class="bx bxl-instagram"></i></a>
                     <a href="https://x.com/Ben10Prof/"><i class="bx bxl-twitter"></i></a>
                 </div>
-                <a href="CV Togo 2025.pdf" class="btn">Télécharger mon CV</a>
+                <a href="CV Mai 2025.pdf" class="btn">Télécharger mon CV</a>
             </div>
 
             <div class="profession-container">
@@ -103,7 +104,7 @@
             <div class="services-box">
                 <i class="bx bx-code-alt"></i>
                 <h3>Développeur Web et Mobile</h3>
-                <p>Je suis développeur web et mobile. Mon travail consiste à concevoir, développer et maintenir des sites web et des applications mobiles. Je m’occupe à la fois de l’interface utilisateur, pour que tout soit esthétique et fonctionnel, et de la partie backend, pour que les données soient bien gérées et sécurisées. Mon rôle inclut aussi l’optimisation des performances, la résolution de problèmes techniques et parfois la collaboration avec des designers ou des clients pour répondre à leurs besoins. <br>
+                <p>Je suis développeur web et mobile. Mon travail consiste à concevoir, développer et maintenir des sites web et des applications mobiles. Je m’occupe à la fois de l’interface utilisateur, pour que tout soit esthétique et fonctionnel, et de la partie backend, pour que les données soient bien gérées et sécurisées.<br>
                    Conception et développement &rarr; Sécurité et performances &rarr; Maintenance et mis à jour
                 </p>
                 <a href="#" class="btn">En savoir plus</a>
@@ -111,7 +112,8 @@
             <div class="services-box">
                 <i class="bx bx-math"></i>
                 <h3>Math Teacher</h3>
-                <p>En tant qu'enseignant de mathématiques, j'explique des concepts mathématiques à différents niveaux, en rendant les notions accessibles et claires pour mes élèves. Mon rôle consiste à préparer des cours, proposer des exercices adaptés, corriger les travaux et accompagner les élèves dans leur progression, tout en les aidant à développer leur logique et leur raisonnement critique (J'offre également des cours <span>en ligne</span> ).</p>
+                <p>En tant qu'enseignant de mathématiques, j'explique des concepts mathématiques à différents niveaux, en rendant les notions accessibles et claires pour mes élèves. Mon rôle consiste à préparer des cours, proposer des exercices adaptés, corriger les travaux et accompagner les élèves dans leur progression. (J'offre également des cours <a href="https://wa.me/+2290161201432?text=Je%20veux%20m%27inscrire%20pour%20des%20cours%20de%20math%C3%A9matiques%20en%20ligne
+">en ligne</a> ).</p>
                 <a href="#" class="btn">En savoir plus</a>
             </div>
             <div class="services-box">
@@ -130,27 +132,27 @@
         
         <div class="portfolio-container">
             <div class="portfolio-box">
+                <img src="SIMELAN.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Développement web</h4>
+                    <p>Site web du centre piscicole SIMELAN au Togo</p>
+                    <a href="https://simelan.saeicube.com"><i class="bx bx-book-open"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
                 <img src="img_carte.jpg" alt="">
                 <div class="portfolio-layer">
                     <h4>Web Disign</h4>
-                    <p>La carte mentale du web et ces principes de base</p>
-                    <a href="https://github.com/Ben10P/carte-mentale-du-web.git"><i class="bx bx-images"></i></a>
+                    <p>La carte mentale du developpement mobile</p>
+                    <a href="https://drive.google.com/file/d/1yfGHdklbrxmG6rNWlya44Wie864AW1ao/view?usp=sharing"><i class="bx bx-images"></i></a>
                 </div>
             </div>
             <div class="portfolio-box">
-                <img src="conn2.jpg" alt="">
+                <img src="ASILI-CARE.jpg" alt="">
                 <div class="portfolio-layer">
                     <h4>Développement web</h4>
-                    <p>Bibliothèque de livres en ligne</p>
-                    <a href="https://github.com/Ben10P/Bibliotheque-en-ligne.git"><i class="bx bx-book-open"></i></a>
-                </div>
-            </div>
-            <div class="portfolio-box">
-                <img src="img_pret.jpg" alt="">
-                <div class="portfolio-layer">
-                    <h4>Développement web</h4>
-                    <p> Un logiciel web pour la simulation et le calcul de prêt hypothécaire</p>
-                    <a href="#"><i class="bx bx-money-withdraw"></i></a>
+                    <p> Le site web du projet dénommé ASILI-CARE</p>
+                    <a href="https://asili-care.com/"><i class="bx bx-money-withdraw"></i></a>
                 </div>
             </div>
             
@@ -161,24 +163,26 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contactez- <span>Moi!</span></h2>
     
-        <form action="#">
+        <form id="contact-form">
+            <div id="success-message" style="display:none; color: green; font-size: 1.4rem; margin-top: 10px;">✅ Message envoyé avec succès !</div>
             <div class="input-box">
-                <input type="text" placeholder="Nom et Prénom">
-                <input type="email" placeholder="Email:">
+                <input type="text" name="name" placeholder="Nom et Prénom">
+                <input type="email" name="email" placeholder="Email">
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Numéro Mobile">
-                <input type="text" placeholder="Sujet">
+                <input type="number" name="phone" placeholder="Numéro Mobile">
+                <input type="text" name="subject" placeholder="Sujet">
             </div>
-            <textarea class="message" name="" id="" cols="30" rows="10" placeholder="Votre Message" ></textarea>
-            <input type="submit" value="Envoyer" class="btn" >
+            <textarea name="message" cols="30" rows="10" placeholder="Votre Message"></textarea>
+            <input type="submit" value="Envoyer" class="btn">
         </form>
+
     </section>
 
 
         <footer class="footer">
             <div class="footer-text">
-                <p>Copyright &copy; 2025 by BEN10Pro | Tous droits reservés</p>
+                <p>&copy; 2025 BEN10Pro | Tous droits réservés. Merci de votre visite!</p>
             </div>
         
             <div class="footer-iconTop">
@@ -189,6 +193,8 @@
 
 <!--- scroll reveal --->
 <script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
 
 <script src="Accueil.js"></script>
 </body>

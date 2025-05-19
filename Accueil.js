@@ -88,7 +88,18 @@ darkModeIcon.addEventListener('click', () => {
   
 
 
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Empêche la soumission par défaut
 
+    emailjs.sendForm("service_rus7bvb", "template_tybxxxs", this, "IjTLsV0CAwNTupvGs")
+    .then(() => {
+        // Efface les champs du formulaire
+        this.reset();
+        alert("Message envoyé avec succès !");
+    }, (error) => {
+        console.log("Erreur:", error);
+    });
+});
 
 
 /*==== dark light mode 03 =====*/
@@ -119,3 +130,5 @@ ScrollReveal().reveal('.home-content, .heading ', { origin: 'top' });
 ScrollReveal().reveal('.home-img img, .services-container, portfolio-box, .contact form ', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content h1, .about-img img' , { origin: 'left' });
 ScrollReveal().reveal('.home-content h3, .home-content p, .video, .about-content' , { origin: 'right' });
+
+
